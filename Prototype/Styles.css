@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    width: 342px;
+    height: auto;
+    margin-left: 38%;
+    padding: 10px 0;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1.yay-bogo {
+    font-size: 20px;
+    color: #4CAF50;
+    font-weight: 600;
+    margin: 15px 10px;
+    text-align: center;
+}
+
+.line-left,
+.line-right {
+    flex: 1;
+    height: 1px;
+    background-color: #C8C8C8;
+}
+
+.option-box {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+}
+
+.radio-label input[type="radio"] {
+    display: none;
+}
+
+.custom-radio {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #C8C8C8;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.radio-label input[type="radio"]:checked+.custom-radio {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.radio-label input[type="radio"]:checked+.custom-radio::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.discount-tag {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2px 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.price-container {
+    text-align: right;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+
+}
+
+.description {
+    margin-left: 35px;
+    font-size: 14px;
+    color: #666;
+
+}
+
+.badge {
+    background-color: #4CAF50;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: -160px;
+    margin-top: -80px;
+}
+
+.price-container {
+    margin-top: 10px;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.size-color-selection {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.size-color-selection label {
+    font-size: 14px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.size-color-selection select {
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80px;
+}
+
+.size-color-selection.hidden {
+    display: none;
+}
+
+.size-color-header {
+    margin-bottom: 10px;
+}
+
+.header-title {
+    margin-left: 35px;
+    margin-right: 20px;
+    color: #726f6f;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.free-delivery-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.free-delivery {
+    font-size: 16px;
+    color: #353434;
+    margin: 0;
+}
+
+.total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-to-cart {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #4CAF50;
+}
+
+.powered-by {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    color: #999;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+.option-box.selected {
+    border-color: #4CAF50;
+    background-color: #eff6ef;
+}
